@@ -1,13 +1,122 @@
-$MainColor1: #008dcd
-$MainColor2: #94D1EC
-$MainColor3: #FFCC00
-$MainColor4: #FCE39C
-$SubColor1: #363636
-$SubColor2: #B3B3B3
-$SubColor3: #E1E1E1
-$SubColor4: #FFFFFF
-
 *
-    margin: 0
-    padding: 0
+  margin: 0
+  padding: 0
+
+body
+  font-family: sans-serif
+
+.top
+  display: flex
+  flex-direction: column
+  padding-left: 16px
+  padding-right: 16px
+  height: 100vh
+  background-repeat: no-repeat
+  background-position: center
+  background-size: cover
+  background-image: url(img/header_bg.png)
+  //background: linear-gradient(243.81deg, #301F68 0%, #561862 100%)
+  &__content
+    color: #ffffff
+    text-align: center
+    flex-grow: 1
+
+.header
+  min-height: 80px
+  display: flex
+  align-items: center
+  justify-content: space-between
+  &__open,
+  &__close
+    color: #fff
+    font-size: 20px
+    display: block
+  &__close
+    right: 30px
+    top: 30px
+    position: absolute
+    color: #000000
+  &__switcher
+    visibility: hidden
+    position: absolute
+    left: -999999px
+    &:checked ~ nav
+      right: 0
+
+.menu
+  list-style: none
+  &__link
+    color: #000000
+    text-decoration: none
+    font-size: 24px
+    padding: 32px 16px
+    display: block
+
+.mainBlock
+  //background: linear-gradient(180deg, #170F39 0%, #342062 100%)
+  &__h2
+    font-style: normal
+    font-weight: bold
+    font-size: 24px
+    line-height: 32px
+    text-align: center
+    color: #FFFFFF
+    margin-bottom: 32px
+    padding-top: 64px
+  &__img
+    background-image: url(img/groupimg.png)
+  &__box
+    padding-left: 16px
+    padding-right: 16px
+    padding-bottom: 128px
+  &__item
+    min-height: 200px
+    background-size: cover
+    background-position: center
+    background-repeat: no-repeat
+    margin-bottom: 16px
+  &__text
+    font-size: 12px
+    line-height: 14px
+    color: #000000
+.shipment
+  background: #008DCD
+  border-radius: 30px
+
+
+@media (max-width: 767px)
+  .menu
+    height: 100vh
+    display: flex
+    flex-direction: column
+    align-items: center
+    justify-content: center
+  .nav
+     position: fixed
+     right: -100%
+     top: 0
+     transition: all 0.5s
+     width: 100%
+     height: 100vh
+     background: #FFFFFF
+  .callBack__form input
+    border: 1px solid #363636
+    box-sizing: border-box
+    border-radius: 30px
+
+@import "m768"
+@import "m960"
+@import "m1200"
+@media (max-width: 320px)
+  .top
+    background-position: right -110px top
+    height: 288px
+    display: flex
+    justify-content: flex-end
+  .mainBlock__h2
+    color: black
+  .header
+    display: flex
+    flex-direction: row
+
 

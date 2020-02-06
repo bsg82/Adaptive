@@ -2,15 +2,66 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="https://kit.fontawesome.com/afdc7aa636.js" crossorigin="anonymous"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>SendIt</title>
-    <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,400i,700,700i&display=swap&subset=cyrillic" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<header>
+<div class="top center">
+    <header class="header">
+        <a href="#" class="logo">
+            <img src="img/logo_White_small.png" alt="logo">
+        </a>
+        <input class="header__switcher" type="checkbox" id="menu">
+        <label class="header__open" for="menu"><i class="fas fa-bars"></i></label>
+        <nav class="nav">
+            <ul class="menu">
+                <li class="menu__list"><a href="" class="menu__link">Главная</a></li>
+                <li class="menu__list"><a href="" class="menu__link">Описание</a></li>
+                <li class="menu__list"><a href="" class="menu__link">Преимущества</a></li>
+                <li class="menu__list"><a href="" class="menu__link">Отзывы</a></li>
+                <li class="menu__list"><a href="" class="menu__link">Партнеры</a></li>
+                <li class="menu__list"><a href="" class="menu__link">Гарантии</a></li>
+                <li class="menu__list"><a href="" class="menu__link">FAQ</a></li>
+            <form class="callBack__form" action="#">
+                <h6 class="menu__h6">Остались вопросы</h6>
+                <label>
+                    <input type="tel" placeholder="Ваш телефон">
+                </label>
+                <submit class="callBack">Заказать звонок</submit>
+            </form>
 
-</header>
+            </ul>
+
+
+            <label class="header__close" for="menu"><i class="fas fa-times"></i></label>
+        </nav>
+    </header>
+    <div class="top__content">
+        <div class="top__text">
+            <h1 class="top__h1">ПРИДУМАЙТЕ ЧТО ОТПРАВИТЬ</h1>
+            <p class="top__info">
+                А посылка доедет сама
+            </p>
+            <button class="shipment">отправить посылку</button>
+        </div>
+    </div>
+</div>
+<div class="mainBlock center">
+    <div class="mainBlock__info">
+        <h2 class="mainBlock__h2">Мы – агрегатор служб доставки</h2>
+        <p class="mainBlock__text">С&nbsp;нами удобно вам, вашим клиентам и&nbsp;курьерским службам. Для вас наши услуги бесплатны, так как мы&nbsp;получаем бонусы от&nbsp;служб доставок за&nbsp;предоставленный объем заказов, а&nbsp;вы&nbsp;получаете надежный сервис в&nbsp;подарок!</p>
+    <button class="shipment">отправить посылку</button>
+    </div>
+    <div class="mainBlock__img"></div>
+    <div class="mainBlock__box">
+        <div style="background-image: url(img/game-img.jpg)" class="unity__item unity__item_big"></div>
+        <div class="mainBlock__parent">
+            <div style="background-image: url(img/game-img.jpg)" class="unity__item"></div>
+            <div style="background-image: url(img/game-img.jpg)" class="unity__item"></div>
+        </div>
+    </div>
+</div>
 </body>
 </html>
