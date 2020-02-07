@@ -20,7 +20,8 @@ body
     color: #ffffff
     text-align: center
     flex-grow: 1
-
+  &__text
+    margin-top: 300px
 .header
   min-height: 80px
   display: flex
@@ -82,6 +83,8 @@ body
 .shipment
   background: #008DCD
   border-radius: 30px
+.callBack
+  background: #008DCD
 
 
 @media (max-width: 767px)
@@ -103,13 +106,21 @@ body
     border: 1px solid #363636
     box-sizing: border-box
     border-radius: 30px
+  .callBack input
+    border: 1px solid #363636
+    box-sizing: border-box
+    border-radius: 30px
+  .phoneMe
+    background: #FFCC00
+    border-radius: 30px
 
 @import "m768"
 @import "m960"
 @import "m1200"
-@media (max-width: 320px)
+
+@media (min-width: 320px)
   .top
-    background-position: right -110px top
+    //background-position: right -110px top
     height: 288px
     display: flex
     justify-content: flex-end
@@ -118,5 +129,27 @@ body
   .header
     display: flex
     flex-direction: row
-
-
+  .mainBlock__box
+    display: flex
+    flex-direction: column
+    width: 280px
+  .mainBlock__text
+    font-size: 14px
+    line-height: 17px
+    height: 56px
+    width: 100%
+  .mainBlock__item1 img
+    width: 100%
+  .mainBlock__item2 img
+    width: 100%
+  .mainBlock__item3 img
+    width: 100%
+  .mainBlock__item4 img
+    width: 100%
+  .callBack__h2
+    font-size: 28px
+    line-height: 34px
+    display: flex
+    align-items: center
+    text-transform: uppercase
+    color: #FFFFFF

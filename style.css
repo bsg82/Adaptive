@@ -23,6 +23,9 @@ body {
   text-align: center;
   flex-grow: 1;
 }
+.top__text {
+  margin-top: 300px;
+}
 
 .header {
   min-height: 80px;
@@ -97,6 +100,10 @@ body {
   border-radius: 30px;
 }
 
+.callBack {
+  background: #008DCD;
+}
+
 @media (max-width: 767px) {
   .menu {
     height: 100vh;
@@ -121,6 +128,17 @@ body {
     box-sizing: border-box;
     border-radius: 30px;
   }
+
+  .callBack input {
+    border: 1px solid #363636;
+    box-sizing: border-box;
+    border-radius: 30px;
+  }
+
+  .phoneMe {
+    background: #FFCC00;
+    border-radius: 30px;
+  }
 }
 @media (min-width: 768px) {
   .header {
@@ -135,8 +153,8 @@ body {
   .menu {
     display: flex;
   }
-  .menu__link a {
-    color: #FFFFFF;
+  .menu__link {
+    color: white;
   }
 
   .center {
@@ -157,9 +175,13 @@ body {
     padding-left: 32px;
     padding-right: 32px;
   }
-  .mainBlock__item {
+  .mainBlock__item1 {
     min-height: 320px;
     margin-bottom: 32px;
+    background-size: contain;
+  }
+  .mainBlock_h2 {
+    color: black;
   }
 }
 .callBack__form {
@@ -187,14 +209,20 @@ body {
   .center {
     padding: 0 calc(50% - 590px);
   }
-}
-.callBack__form {
-  display: none;
-}
 
-@media (max-width: 320px) {
+  .callBack__form {
+    display: none;
+  }
+
+  .mainBlock__box {
+    width: 1400px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+}
+@media (min-width: 320px) {
   .top {
-    background-position: right -110px top;
     height: 288px;
     display: flex;
     justify-content: flex-end;
@@ -207,6 +235,44 @@ body {
   .header {
     display: flex;
     flex-direction: row;
+  }
+
+  .mainBlock__box {
+    display: flex;
+    flex-direction: column;
+    width: 280px;
+  }
+
+  .mainBlock__text {
+    font-size: 14px;
+    line-height: 17px;
+    height: 56px;
+    width: 100%;
+  }
+
+  .mainBlock__item1 img {
+    width: 100%;
+  }
+
+  .mainBlock__item2 img {
+    width: 100%;
+  }
+
+  .mainBlock__item3 img {
+    width: 100%;
+  }
+
+  .mainBlock__item4 img {
+    width: 100%;
+  }
+
+  .callBack__h2 {
+    font-size: 28px;
+    line-height: 34px;
+    display: flex;
+    align-items: center;
+    text-transform: uppercase;
+    color: #FFFFFF;
   }
 }
 
